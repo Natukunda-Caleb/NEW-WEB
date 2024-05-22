@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky Foundation Primary School</title>
+    <!-- Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+          }
+          section {
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            place-items: center;
+          }
+          .row {
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .column {
+            width: 100%;
+            padding: 0 1em 1em 1em;
+            text-align: center;
+          }
+          .card {
+            width: 100%;
+            height: 100%;
+            padding: 2em 1.5em;
+            background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
+            background-size: 100% 200%;
+            background-position: 0 2.5%;
+            border-radius: 5px;
+            box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+            cursor: pointer;
+            transition: 0.5s;
+          }
+          .icon-wrapper {
+            background-color: #2c7bfe;
+            position: relative;
+            margin: auto;
+            font-size: 30px;
+            height: 2.5em;
+            width: 2.5em;
+            color: #ffffff;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            transition: 0.5s;
+          }
+          .card:hover {
+            background-position: 0 100%;
+          }
+          .card:hover .icon-wrapper {
+            background-color: #ffffff;
+            color: #2c7bfe;
+          }
+          .card:hover h3 {
+            color: #ffffff;
+          }
+          .card:hover p {
+            color: #f0f0f0;
+          }
+          @media screen and (min-width: 768px) {
+            section {
+              padding: 0 2em;
+            }
+            .column {
+              flex: 0 50%;
+              max-width: 50%;
+            }
+          }
+          @media screen and (min-width: 992px) {
+            section {
+              padding: 1em 3em;
+            }
+            .column {
+              flex: 0 0 33.33%;
+              max-width: 33.33%;
+            }
+          }
+          li {
+            list-style-type: none;
+          }
+          .fa {
+            margin-right: 20px;
+          }
+          .fa:hover {
+            color: chocolate;
+          }
+          .dropdown {
+            position: relative;
+            display: contents;
+          }
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: I60px;
+            box-shadow: opx 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+          }
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            display: block;
+            text-decoration: none;
+          }
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+          .left {
+            margin-bottom: 50px;
+          }
+          nav {
+            background-color:antiquewhite;
+            color: rgb(255, 255, 0);
+            padding: 25px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding: 5px;
+        }
+        
+        nav a:hover {
+            background-color:chocolate;
+            color: #333;
+        }
+      
+        body {
+          font-style: italic;
+        }
+        h2 {
+          color:crimson;
+        }      
+    </style>
+  </head>
+  <body style="background-color:antiquewhite">
+    <h1 style="color: blue;" align="center">SERVICES OFFERED AT OUR CAMPUS</h1>
+    <div class="dropdown"><button class="btn"><i class="fa fa-bars"></a></i> Menu</button>
+      <div class="dropdown-content" >
+        <li><a href="index.html" style="color:blue">HOME PAGE</a></li>
+          <li><a href="profile.html" style="color: blue;">ABOUT US</a></li>
+          <li><a href="branches.html" style="color: blue;" >BRANCHES</a></li>
+          <li><a href="gallery.html" style="color:blue">GALLERY</a></li>
+          <li><a href="management.html" style="color:blue">MANAGEMENT</a></li>
+          <li><a href="services.html" style="color:blue">SERVICES</a></li>
+      </div>
+    </div>
+      <center>
+        <nav>
+          <a href="index.html" style="color:blue">HOME PAGE</a>
+          <a href="profile.html" style="color: blue;">ABOUT US</a>
+          <a href="branches.html" style="color: blue;" >BRANCHES</a>
+          <a href="gallery.html" style="color:blue">GALLERY</a>
+          <a href="management.html" style="color:blue">MANAGEMENT</a>
+          <a href="services.html" style="color:blue">SERVICES</a>
+        </nav>
+      </center>
+    <section>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h2>BURSARIES OFFERED</h2>
+              <P><h3>Dear parent and pupils, you can acquire alot of bursaries from our School, especially sports bursaries, academic bursaries and many others.</h3></P>    
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-truck-pickup"></i>
+            </div>
+            <h2>TRANSPORT SERVICES</h2>
+            <P><h3>Our dear pupils and parents, we offer free transport for our pupils who study from our School every morning and evening going back home</h3></P>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-wrench"></i>
+            </div>
+            <h2>DISCOUNT</h2>
+            <P><h3>Dear parents and our pupils, we offer a cash discount of 15% on termly fees and he who pays first is offered a discount</h3></P>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h2>CONTACT CALLS</h2>
+            <P><h3>Dear parent, we offer free calls to toll free on our Tel: +256778566825, +256704403152</h3></P>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-android"></i>
+            </div>
+            <h2>LUNCH SPECIAL</h2>
+            <p>
+              Our dear parents and pupils, we give our pupils and staff lunch and with a balanced diet.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-location"></i>
+            </div>
+            <h2>SPORTS</h2>
+            <p>
+             Our Dear parents and pupils, we have a lot of sports activies like football, netball, athletics, chase and many others.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
